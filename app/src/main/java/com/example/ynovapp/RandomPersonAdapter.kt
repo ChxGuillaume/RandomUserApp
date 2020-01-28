@@ -33,7 +33,7 @@ class RandomPersonAdapter : RecyclerView.Adapter<RandomPersonAdapter.ViewHolder>
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val person = randomPersons[position]
         viewHolder.cardView.tag = position
-        viewHolder.name.text = person.name.first + ' ' + person.name.first.toUpperCase()
+        viewHolder.name.text = person.name.first + ' ' + person.name.last.toUpperCase()
         viewHolder.mail.text = person.email
 
         viewHolder.itemView.setOnClickListener {
