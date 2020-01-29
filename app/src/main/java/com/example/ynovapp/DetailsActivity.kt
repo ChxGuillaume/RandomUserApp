@@ -18,6 +18,7 @@ class DetailsActivity : AppCompatActivity() {
         lastName.text = bundleExtras?.getString("lastName")
         firstName.text = bundleExtras?.getString("firstName")
         email.text = bundleExtras?.getString("email")
+        address.text = bundleExtras?.getString("address")
 
 
         Glide.with(this)

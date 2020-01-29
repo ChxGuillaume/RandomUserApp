@@ -43,6 +43,7 @@ class RandomPersonAdapter : RecyclerView.Adapter<RandomPersonAdapter.ViewHolder>
             intent.putExtra("lastName", person.name.last)
             intent.putExtra("firstName", person.name.first)
             intent.putExtra("email", person.email)
+            intent.putExtra("address", "${person.location.street.number} ${person.location.street.name},\n ${person.location.postcode} ${person.location.city}")
 
             viewHolder.cardView.context.startActivity(intent)
         }

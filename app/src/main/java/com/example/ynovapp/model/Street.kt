@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class Street (
 
-	@SerializedName("number") val street : String,
-	@SerializedName("name") val city : String
+	@SerializedName("number") val number : String,
+	@SerializedName("name") val name : String
 
 )
